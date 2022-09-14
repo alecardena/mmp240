@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+ }
+html{
+     background-color: lightcyan;
+    }
+body{
+     border: solid lightskyblue 5px;
+     width: 1600px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: white;
+    }
+div{
+    padding: 1.5em;
+   }
+img{
+    width: 20%;
+   }
+h1{
+   margin-top: 2rem;
+   text-align: center;
+  }
+h2{
+   margin-bottom: 1rem;
+  }
+ul{
+   margin-bottom: 1rem;
+   padding-left: 1em;
+  }
+li{
+   padding: .2em
+  }
+p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
