@@ -1,7 +1,39 @@
+/*----- Resetting Brower's defaults -----*/
+
+/* Univerrsal selector selects all elements */
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/*body{
+  ------------font---------
+}*/
+
+h2, p{
+  margin-bottom: 1em;
+}
+
 #wrapper{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+header a: hover{
+  background-color: #5D2C2F;
 }
 
 header{
@@ -14,4 +46,67 @@ header{
   linear-gradient(90deg, rgba(1,2,6,1) 0%,
   rgba(1,2,6,1) 57%, rgba(1,2,6,0) 78%),
   url("images/star_wars_andor_characters.png") no-repeat right top;
+}
+
+nav{
+  background-color: #5D2C2F;
+  padding: 0.5em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+/*nav li{
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 9em;
+  text-align: center;
+  color: white;
+  border-right: solid 1px white;
+}*/
+
+nav li{
+  display: inline-block;
+  margin-left: 1em;
+  padding-right: 1em;
+  color: white;
+  border-right: solid 1px white;
+}
+
+nav li: last-child{
+  border: none;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+nav a: hover{
+  color: pink;
+  text-decoration: underline;
+}
+
+header p{
+  width: 250px;
+  color: white;
+}
+
+main{
+  padding: 0 2em;
+}
+
+.col{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.col: last-child{
+  margin-right: 0;
+}
+
+footer{
+  clear: both;
+  padding: 2em;
 }
