@@ -26,6 +26,9 @@ h2{
    margin-bottom: 1rem;
    margin-left: 3.8rem;
   }
+h3{
+   padding-bottom: 1em;
+  }
 ul{
    margin-bottom: 1rem;
    padding-left: 1em;
@@ -37,3 +40,10 @@ p{
   margin-top: 2rem;
   margin-bottom: 2rem;
  }
+ a {
+   color: royalblue;
+   text-decoration: none;
+ }
+ a:hover {
+   color: Red;
+   text-decoration: underline;
