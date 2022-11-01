@@ -16,8 +16,22 @@ body{
   background-color: #010206;
 }
 
-h2, p{
-  margin-bottom: 1em;
+.titleandbuttons2 h2{
+  padding-bottom: .5em;
+}
+
+p{
+  margin-bottom: 1.5em;
+}
+
+.topintro{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 16px;
+}
+
+.bottomintro{
+  font-size: 19px;
 }
 
 #wrapper{
@@ -30,8 +44,19 @@ h2, p{
   linear-gradient(90deg, rgba(1,2,6,1) 0%, rgba(1,2,6,1) 57%, rgba(1,2,6,0) 78%),
   /*Left Gradinet*/
   linear-gradient(270deg, rgba(1,2,6,1) 0%, rgba(1,2,6,1) 1%, rgba(1,2,6,0) 8%),
+  /*Bottom Gradinet*/
+  linear-gradient(180deg, rgba(1,2,6,0) 50%, rgba(1,2,6,1) 57.5%, rgba(1,2,6,1) 100%),
   url("images/star_wars_andor_characters.png") no-repeat right top,
   #010206;
+}
+
+main{
+  /*Bottom Gradinet for Episodes Page*/
+  background: linear-gradient(180deg, rgba(1,2,6,0) 0%, rgba(1,2,6,1) 9%, rgba(1,2,6,1) 100%);
+}
+
+.logo{
+  padding-left: 4.5em;
 }
 
 header a{
@@ -49,7 +74,7 @@ header a: hover{
 }
 
 header{
-  padding: 5em 2em 0 5em; /* <---- top, right, bottom, left */
+  padding: 4em 2em 0 5em; /* <---- top, right, bottom, left */
   /* background-color: #010206;
   background-image: url("images/star_wars_andor_characters.PNG");
   background-repeat: no-repeat;
@@ -60,7 +85,8 @@ nav{
   padding: 0.5em;
   padding-left: 1em;
   margin-bottom: 2em;
-  background: linear-gradient(90deg, rgba(93,44,47,1) 0%, rgba(93,44,47,1) 30%, rgba(93,44,47,0) 65%, rgba(93,44,47,0) 100%);
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(93,44,47,1) 0%, rgba(93,44,47,1) 50%, rgba(93,44,47,0) 57.4%, rgba(93,44,47,0) 100%);
 }
 
 /*nav li{
@@ -75,10 +101,9 @@ nav{
 
 nav li{
   display: inline-block;
-  margin-left: 1em;
-  padding-right: 1em;
+  margin-left: 1.5em;
+  padding-right: 1.5em;
   color: white;
-  border-right: solid 1px white;
 }
 
 nav li: last-child{
@@ -90,8 +115,8 @@ nav a{
   text-decoration: none;
 }
 
-nav a: hover{
-  color: pink;
+nav a:hover{
+  color: red;
   text-decoration: underline;
 }
 
@@ -109,8 +134,12 @@ main{
   flex-wrap: wrap;
 }
 
-.titleandbuttons2{
+.titleandbuttons2, .titleandbuttons3{
   margin-right: 1em;
+}
+
+.titleandbuttons3{
+  padding-top: .6em;
 }
 
 .cast{
@@ -125,23 +154,35 @@ main{
   margin-right: 2%;
 }
 
+.colleft h2{
+  font-size: 40px;
+}
+
 .colleft: last-child{
   margin-right: 0;
 }
 
 .colright{
-  background: linear-gradient(180deg, rgba(1,2,6,0) 0%, rgba(1,2,6,1) 50%, rgba(1,2,6,1) 100%);
+  width: 48%;
+  float: right;
 }
 
 footer{
   clear: both;
   padding: 2em;
+  margin-bottom: 4em;
 }
 
 /* Episodes Page*/
 
+h2{
+  font-size: 36px;
+  padding-bottom: .5em;
+}
+
 h3{
   padding-bottom: 1em;
+  font-size: 20px;
 }
 
 .episodes{
@@ -175,6 +216,7 @@ h3{
 .card img{
   width: 100%;
 }
+
 .card p{
   padding: 0.5em 0.5em 0 0.5em;
   font-size: 12px;
