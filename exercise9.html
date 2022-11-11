@@ -13,6 +13,20 @@
       .layout img{
         width:100%;
       }
+      .layout{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 32% 32% 32%;
+        grid-row-gap: 2%;
+        grid-column-gap: 1em;
+      }
+      .one, .five{
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .back-to-home{
+        padding-top: 1.5em;
+      }
     </style>
   </head>
   <body>
@@ -34,7 +48,9 @@
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
           </div>
-          <a href="index.html">Back to class website</a>
+        <div class="back-to-home">
+            <a href="index.html">Back to class website</a>
+        </div>
     </div>
   </body>
 </html>
