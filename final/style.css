@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body{
+  font-family: 'Works Sans', sans-serif;
+  margin: 1em;
+}
+
+#wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+p, h1, h2, h3, nav, article{
+  margin-bottom: 1em;
+}
+
+/* header navigation */
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#dropmenu{
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  border: solid 1px lightgray;
+  padding: 0.5em;
+  background-color: #fff;
+}
+
+#dropmenu ul{
+  list-style-type: none;
+}
+
+#dropmenu li{
+  padding: 0.5em 1em;
+}
+
+#dropmenu input{
+  border: solid 1px gray;
+  padding: 5px;
+}
+
+/* search program navigation */
+
+.search-program strong a{
+  color: black;
+}
+
+.search-program a{
+  text-decoration: none;
+  color: darkgray;
+  font-weight: 600;
+  padding: 0.5em 0;
+  display: block;
+}
+
+.search-program li{
+  text-align: center;
+  border: solid 1px gray;
+}
+
+.search-program li ul{
+  list-style-type: none;
+  background-color: lightgray;
+  display: none;
+}
+
+.search-program li:hover ul{
+  display: block;
+}
