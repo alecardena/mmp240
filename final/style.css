@@ -67,6 +67,7 @@ header{
 .search-program li{
   text-align: center;
   border: solid 1px gray;
+  list-style-type: none;
 }
 
 .search-program li ul{
@@ -77,4 +78,7 @@ header{
 
 .search-program li:hover ul{
   display: block;
+}
+.search-program nav img{
+  width: 15px;
 }
