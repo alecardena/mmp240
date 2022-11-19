@@ -21,6 +21,14 @@ p, h1, h2, h3, nav, article{
   margin-bottom: 1em;
 }
 
+.button{
+  padding: 0.5em;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 /* header navigation */
 
 header{
@@ -29,7 +37,7 @@ header{
 }
 
 #dropmenu{
-  /* display: none; */
+  display: none;
   position: absolute;
   right: 0;
   border: solid 1px lightgray;
@@ -71,7 +79,6 @@ header{
 }
 
 .search-program li ul{
-  list-style-type: none;
   background-color: lightgray;
   display: none;
 }
@@ -79,6 +86,36 @@ header{
 .search-program li:hover ul{
   display: block;
 }
-.search-program nav img{
+
+.search-program img{
   width: 15px;
+}
+
+/* banner style */
+
+.banner{
+  background-color: #eee;
+  padding: 4em 2em;
+}
+
+/* main style */
+
+main ul{
+  list-style-type: none;
+}
+
+@media (min-width:769px){
+  #dropmenu{
+    display:flex;
+    position: static;
+    border: none;
+  }
+
+  #dropmenu li{
+    display: inline;
+  }
+
+  .menu-icon{
+    display: none;
+  }
 }
