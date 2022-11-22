@@ -89,13 +89,21 @@ header{
 
 .search-program img{
   width: 15px;
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
+
+.search-program li:hover img{
+  transform: rotate(180deg);
+}
+
 
 /* banner style */
 
 .banner{
   background-color: #eee;
   padding: 4em 2em;
+  margin-bottom: 2em;
 }
 
 /* main style */
@@ -118,4 +126,42 @@ main ul{
   .menu-icon{
     display: none;
   }
-}
+
+  .program-menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-menu li{
+    width: 30%;
+    position: relative;
+  }
+
+  .program-menu li ul{
+    position: absolute;
+    width: 100%;
+  }
+
+  .program-menu li ul li{
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .program-menu li ul li:hover{
+    background-color: lightblue;
+  }
+
+  /* main layout */
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  .news{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+} /* closing media query */
