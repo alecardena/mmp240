@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CUNY Desgin</title>
   <link rel="stylesheet" href="style.css">
+  <script src="showMenu.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,12 @@
     <header>
       <h1><a href="index.html">CUNY Desgin</a></h1>
       <nav class="topnav">
-        <img class="menu-icon" src="images/menu.svg" alt="menu">
+        <img class="menu-icon" src="images/menu.svg" alt="menu" onclick="showMenu();">
         <div id="dropmenu">
           <ul>
-            <li><a href="#">About CUNY</a></li>
-            <li><a href="#">Financial Aid</a></li>
-            <li><a href="#">Apply</a></li>
+            <li><a href="https://www.cuny.edu/about/">About CUNY</a></li>
+            <li><a href="https://www.cuny.edu/financial-aid/">Financial Aid</a></li>
+            <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
           </ul>
           <form class="search" action="#" method="post">
             <input type="search" name="search" value="Search">
@@ -33,28 +34,28 @@
       <h3>Search by</h3>
       <nav>
         <ul class="program-menu">
-          <li><strong><a href="">Discipline</a></strong>
+          <li><strong><a href="#">Discipline</a></strong>
             <img src="images/expand_more.svg" alt="more">
             <ul>
-              <li><a href="">Digital Design</a></li>
-              <li><a href="">Animation</a></li>
-              <li><a href="">Industrial Design</a></li>
+              <li><a href="digitaldesgin.html">Digital Design</a></li>
+              <li><a href="animation.html">Animation</a></li>
+              <li><a href="industrialdesign.html">Industrial Design</a></li>
             </ul>
           </li>
-          <li><strong><a href="">Degree</a></strong>
+          <li><strong><a href="#">Degree</a></strong>
             <img src="images/expand_more.svg" alt="more">
             <ul>
-              <li><a href="">Associate</a></li>
-              <li><a href="">Bachelor</a></li>
+              <li><a href="associate.html">Associate</a></li>
+              <li><a href="bachelor.html">Bachelor</a></li>
             </ul>
           </li>
-          <li><strong><a href="">Borough</a></strong>
+          <li><strong><a href="#">Borough</a></strong>
             <img src="images/expand_more.svg" alt="more">
             <ul>
-              <li><a href="">Brooklyn</a></li>
-              <li><a href="">Manhattan</a></li>
-              <li><a href="">Queens</a></li>
-              <li><a href="">Bronx</a></li>
+              <li><a href="brooklyn.html">Brooklyn</a></li>
+              <li><a href="manhattan.html">Manhattan</a></li>
+              <li><a href="queens.html">Queens</a></li>
+              <li><a href="bronx.html">Bronx</a></li>
             </ul>
           </li>
         </ul>
@@ -68,21 +69,30 @@
         <section class="news">
           <h2>Design News</h2>
           <article class="news-item">
-            <h3></h3>
-            <time></time>
-            <p></p>
-            <a href="#"></a>
+            <h3>CUNY TV Wins 21st New York Emmy Award For Animated Opening Sequence Of ‘Shades Of U.S.’
+            </h3>
+            <time class="pubdate" datetime="2020-04-27">April 27, 2020</time>
+            <p>CUNY TV Art Director Adam Finger prevailed in the category of Graphic Arts: Animation for
+              his soulful opening sequence of “Shades of U.S.,” a series that explores the complexities
+              of people’s lives through the prisms of color, race, religion and sexual orientation. Finger’s
+              30-second animated show opening shines a spotlight on society’s unsung ordinary heroes through...</p>
+            <a href="https://www1.cuny.edu/mu/forum/2020/04/27/cuny-tv-wins-21st-new-york-emmy-award-for-animated-opening-sequence-of-shades-of-u-s/">Read more</a>
           </article>
           <article class="news-item">
-            <h3></h3>
-            <time></time>
-            <p></p>
-            <a href="#"></a>
+            <h3>CUNY Expands Digital Skills Curriculum And Creates Student Pipeline For Tech Jobs
+            </h3>
+            <time class="pubdate" datetime="2019-10-28">October 28, 2019</time>
+            <p>The City University of New York has significantly expanded its digital skills curriculum
+              as part of a broad-based effort to produce a steady pipeline of diverse, adaptable, critical
+              thinkers who can thrive in a workplace environment that is increasingly reliant on advanced
+              digital technologies across most sectors of the economy. Another aim of this initiative is
+              to encourage...</p>
+            <a href="https://www1.cuny.edu/mu/forum/2019/10/28/cuny-expands-digital-skills-curriculum-and-creates-student-pipeline-for-tech-jobs/">Read more</a>
         </section> <!-- .news -->
         <section class="events">
           <h2>Events</h2>
           <article class="event-items">
-            <img src="https://via.placeholder.com/200px" alt="">
+            <img src="images/Digital-Design-Showcase.jpg" alt="Digital Design Showcase">
             <h3><a href="https://events.cuny.edu/cec/virtual-digital-design-showcase-day/">Virtual Digital Design Showcase Day</a></h3>
             <ul>
               <li><strong>Date:</strong> June 18, 2020</li>
@@ -94,5 +104,16 @@
       </main>
       <footer>&copy; 2020 The City University of New York</footer>
   </div> <!-- #wrapper -->
+  <script src="easy_background.js"></script>
+  <script>
+    easy_background(".banner",
+      {
+        slide: ["images/LCC.jpg", "images/LC.jpg", "images/TCCONY.jpg", "images/QCC.jpg", "images/BC.jpg", "images/YC.jpg", "images/BMCC.jpg", "images/HCC.jpg", "images/NYCCOT.jpg"],
+
+        delay: [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000]
+      }
+    );
+  </script>
+
 </body>
 </html>

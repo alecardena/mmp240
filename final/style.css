@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&family=Work+Sans&display=swap');
 
 *{
   margin: 0;
@@ -9,6 +9,7 @@
 body{
   font-family: 'Works Sans', sans-serif;
   margin: 1em;
+  background-color: lightgray;
 }
 
 #wrapper{
@@ -17,16 +18,43 @@ body{
   position: relative;
 }
 
+h1 a{
+  font-family: Fredoka One;
+  color: #284d79;
+  text-decoration: none;
+}
+
+h1 a:hover{
+  color: red;
+  text-decoration: underline;
+}
+
 p, h1, h2, h3, nav, article{
   margin-bottom: 1em;
 }
 
+h2{
+  color: #414A47;
+}
+
+.banner h2{
+  color: white;
+}
+
+h3{
+  color: #284d79;
+}
+
 .button{
   padding: 0.5em;
-  background-color: #000;
-  color: #fff;
+  background-color: #284d79;
+  color: white;
   border-radius: 10px;
   text-decoration: none;
+}
+
+.button:hover{
+  color: red;
 }
 
 /* header navigation */
@@ -40,9 +68,11 @@ header{
   display: none;
   position: absolute;
   right: 0;
-  border: solid 1px lightgray;
+  border: solid 1px black;
   padding: 0.5em;
-  background-color: #fff;
+  background-color: lightgray;
+  text-decoration: none;
+  /* right: 0; */
 }
 
 #dropmenu ul{
@@ -58,15 +88,29 @@ header{
   padding: 5px;
 }
 
+#dropmenu a{
+  color: #284d79;
+  text-decoration: none;
+}
+
+#dropmenu a:hover{
+  color: red;
+  text-decoration: underline;
+}
+
 /* search program navigation */
 
 .search-program strong a{
-  color: black;
+  color: #284d79;
+}
+
+.search-program strong a:hover{
+  color: red;
 }
 
 .search-program a{
   text-decoration: none;
-  color: darkgray;
+  color: black;
   font-weight: 600;
   padding: 0.5em 0;
   display: block;
@@ -79,7 +123,6 @@ header{
 }
 
 .search-program li ul{
-  background-color: lightgray;
   display: none;
 }
 
@@ -97,6 +140,13 @@ header{
   transform: rotate(180deg);
 }
 
+.search-program li ul li:hover{
+  background-color: #284d79;
+}
+
+.search-program li ul li{
+  background-color: white;
+}
 
 /* banner style */
 
@@ -104,6 +154,32 @@ header{
   background-color: #eee;
   padding: 4em 2em;
   margin-bottom: 2em;
+  border: solid 1px #eee;
+  border-radius: 20px;
+}
+
+.news a{
+  color: #284d79;
+  text-decoration: none;
+}
+
+.news a:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.events a{
+  color: #284d79;
+  text-decoration: none;
+}
+
+.events a:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.events img{
+  width: 100%
 }
 
 /* main style */
@@ -112,9 +188,47 @@ main ul{
   list-style-type: none;
 }
 
+/* Programs pages */
+
+.card-link{
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s;
+  border: solid 1px gray;
+  border-radius: 15px;
+  margin-bottom: 1.5em;
+}
+
+.card-link:hover{
+  transform: scale(1.05);
+  box-shadow: 5px 10px #888;
+}
+
+.program-card{
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-body{
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.card-body h4{
+  font-size: 15px;}
+
+.card-body p{
+  font-size: 14px;
+  padding-top: 2em;
+}
+
+.program-card img{
+  width: 100%;
+}
+
 @media (min-width:769px){
+
   #dropmenu{
-    display:flex;
+    display: flex;
     position: static;
     border: none;
   }
@@ -148,7 +262,7 @@ main ul{
   }
 
   .program-menu li ul li:hover{
-    background-color: lightblue;
+    background-color: #284d79;
   }
 
   /* main layout */
