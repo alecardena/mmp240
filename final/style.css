@@ -77,6 +77,7 @@ header{
 
 #dropmenu ul{
   list-style-type: none;
+  padding-top: 0.3em;
 }
 
 #dropmenu li{
@@ -151,10 +152,10 @@ header{
 /* banner style */
 
 .banner{
-  background-color: #eee;
+  background-color: lightgray;
   padding: 4em 2em;
   margin-bottom: 2em;
-  border: solid 1px #eee;
+  border: solid 1px lightgray;
   border-radius: 20px;
 }
 
@@ -223,6 +224,10 @@ main ul{
 
 .program-card img{
   width: 100%;
+}
+
+footer{
+  font-size: 12px;
 }
 
 @media (min-width:769px){
