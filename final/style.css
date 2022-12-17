@@ -29,7 +29,11 @@ h1 a:hover{
   text-decoration: underline;
 }
 
-p, h1, h2, h3, nav, article{
+h1, h2, nav, article{
+  margin-bottom: 1em;
+}
+
+.search-program h3{
   margin-bottom: 1em;
 }
 
@@ -170,6 +174,10 @@ header{
   border-radius: 20px;
 }
 
+.read-more{
+  padding-top: 1em;
+}
+
 .news a{
   color: #284d79;
   text-decoration: none;
@@ -178,6 +186,10 @@ header{
 .news a:hover{
   color: red;
   text-decoration: underline;
+}
+
+.news h3{
+  padding-bottom: 1em;
 }
 
 .events a{
@@ -200,6 +212,7 @@ header{
 
 .events h3{
   padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 /* main style */
@@ -233,12 +246,18 @@ main ul{
   padding: 0.5em 0.5em 0 0.5em;
 }
 
+.card-body h3{
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+
 .card-body h4{
   font-size: 15px;}
 
 .card-body p{
   font-size: 14px;
-  padding-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .program-card img{
