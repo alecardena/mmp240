@@ -37,6 +37,10 @@ h2{
   color: #414A47;
 }
 
+.datetime1{
+  padding-bottom: 1em;
+}
+
 .banner h2{
   color: white;
 }
@@ -125,6 +129,8 @@ header{
 
 .search-program li ul{
   display: none;
+  position: absolute;
+  width: 100%;
 }
 
 .search-program li:hover ul{
@@ -147,6 +153,11 @@ header{
 
 .search-program li ul li{
   background-color: white;
+}
+
+.search-program li{
+  border: solid 1px gray;
+  border-radius: 15px;
 }
 
 /* banner style */
@@ -181,6 +192,14 @@ header{
 
 .events img{
   width: 100%
+}
+
+.events li{
+  margin-bottom: .5em;
+}
+
+.events h3{
+  padding-top: .5em;
 }
 
 /* main style */
@@ -227,6 +246,7 @@ main ul{
 }
 
 footer{
+  padding-top: 1em;
   font-size: 12px;
 }
 
@@ -254,6 +274,8 @@ footer{
   .program-menu li{
     width: 30%;
     position: relative;
+    border: solid 1px gray;
+    border-radius: 15px;
   }
 
   .program-menu li ul{
